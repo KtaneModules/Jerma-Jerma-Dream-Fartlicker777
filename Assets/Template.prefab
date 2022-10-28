@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 114702057092941650}
   - component: {fileID: 114114569135979578}
   - component: {fileID: 114801721683868768}
-  - component: {fileID: 114787424363488194}
+  - component: {fileID: 114800908281802636}
   m_Layer: 0
   m_Name: Template
   m_TagString: Untagged
@@ -353,7 +353,7 @@ Transform:
   m_GameObject: {fileID: 1135587950536364}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.0179, z: -0.0594}
-  m_LocalScale: {x: 0.0008, y: 0.0010000004, z: 1}
+  m_LocalScale: {x: 0.0007, y: 0.0010000004, z: 1}
   m_Children: []
   m_Father: {fileID: 4968870541517360}
   m_RootOrder: 2
@@ -537,7 +537,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e6ddc669e9faa4dad93207caa5a7c773, type: 2}
+  - {fileID: 2100000, guid: bdbd20aa07f7cf0439c92a496537f029, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -884,7 +884,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1135587950536364}
-  m_Text: Neither
+  m_Text: Innocent
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -905,7 +905,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1237018184730764}
-  m_Text: Goose
+  m_Text: Dream
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -926,7 +926,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1095988213500244}
-  m_Text: Duck
+  m_Text: Jerma
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -1024,8 +1024,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CountdownTime: 40
-  ModuleType: DUCKDUCKGOOSE
-  ModuleDisplayName: Duck, Duck, Goose
+  ModuleType: JermaJermaDream
+  ModuleDisplayName: Jerma, Jerma, Dream
   RequiresTimerVisibility: 0
   WarnAtFiveSeconds: 1
 --- !u!114 &114262734865619630
@@ -1130,7 +1130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderNames:
   - Standard
---- !u!114 &114787424363488194
+--- !u!114 &114800908281802636
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1145,41 +1145,14 @@ MonoBehaviour:
   Audio: {fileID: 114702057092941650}
   Needy: {fileID: 114213831619758402}
   photos:
-  - {fileID: 2100000, guid: f01c4157d2c714dabbfd436b259438a9, type: 2}
-  - {fileID: 2100000, guid: 1059321c038c44d309aa6a1f42aaf82d, type: 2}
-  - {fileID: 2100000, guid: 0f714fb69296047b0b1da093fe585769, type: 2}
-  - {fileID: 2100000, guid: 85deb1b802575486896364569503b1ac, type: 2}
-  - {fileID: 2100000, guid: 4a98661385a254dec9978e9cd34a2e7a, type: 2}
-  - {fileID: 2100000, guid: 70236a6c92fa749dd801372f7c35079f, type: 2}
-  - {fileID: 2100000, guid: fa7d5dd50806e494fa30311127b9e270, type: 2}
-  - {fileID: 2100000, guid: 2c39dfdaf0e774ad9ba949968919d66c, type: 2}
-  - {fileID: 2100000, guid: 6eac0eceb5cf74d53ab3e8777796b6e2, type: 2}
-  - {fileID: 2100000, guid: 3e5433d6d27b1421c8cfe23bb33bf52d, type: 2}
-  - {fileID: 2100000, guid: b05f1fd79040040c0a15e8e325ee91e7, type: 2}
-  - {fileID: 2100000, guid: 8b1bf99ccfe6445fb97d99ab0099b2a1, type: 2}
-  - {fileID: 2100000, guid: db97c64118ae841b792cf4ddfe6b93b2, type: 2}
-  - {fileID: 2100000, guid: 216d85a02ec384d15b834773ac16d709, type: 2}
-  - {fileID: 2100000, guid: 555228919d3a14f5d9010460c5ec6fb2, type: 2}
-  - {fileID: 2100000, guid: c162d8b0e9c8c4b97b4e91230afd95fd, type: 2}
-  - {fileID: 2100000, guid: fd21185345c454fa5984b2c931ab1f99, type: 2}
-  - {fileID: 2100000, guid: 5c4fe9664d5624158b2ffee596a7febe, type: 2}
-  - {fileID: 2100000, guid: 1aabe2f3cf0ff44478577c143efaa363, type: 2}
-  - {fileID: 2100000, guid: 5d22c6adecb6f45668428abb9ff38f3a, type: 2}
-  - {fileID: 2100000, guid: c4abc9925f6e94b5bab9de4ec7cbff1e, type: 2}
-  - {fileID: 2100000, guid: bc08eabb8240944aab73ae1a7fd5657a, type: 2}
-  - {fileID: 2100000, guid: 272ef8be2d4d34374bcbf2d8f2ab3539, type: 2}
-  - {fileID: 2100000, guid: c3c966899eb894d97a322ab576b1bbf3, type: 2}
-  - {fileID: 2100000, guid: a78542491d73440138ec00dd50e69654, type: 2}
-  - {fileID: 2100000, guid: 0bac51a50c1d0457a80ffdbe5142ef8f, type: 2}
-  - {fileID: 2100000, guid: e65370e0f9dc5497a985737d2e823b5e, type: 2}
-  - {fileID: 2100000, guid: 172caa7825ac64ac2bacf9ae7ad8befb, type: 2}
-  - {fileID: 2100000, guid: 7d98db6e0a2ff41c4ae0df2bd098727c, type: 2}
-  - {fileID: 2100000, guid: 9e5f114681eca482590de5a50d9d6f67, type: 2}
+  - {fileID: 2100000, guid: 2648575fb66bde84094e46ae57e00953, type: 2}
+  - {fileID: 2100000, guid: c5337469f4c1ea64184098f071f8f4de, type: 2}
+  - {fileID: 2100000, guid: b70a5bf83ce0d2e48ad364085de151b4, type: 2}
   screen: {fileID: 1700549824489256}
   buttons:
   - {fileID: 114115273435045142}
-  - {fileID: 114903752866821082}
   - {fileID: 114802199612727060}
+  - {fileID: 114903752866821082}
 --- !u!114 &114801721683868768
 MonoBehaviour:
   m_ObjectHideFlags: 1
