@@ -80,23 +80,38 @@ public class JermaJermaDream : MonoBehaviour {
             Needy.HandleStrike();
             Needy.HandlePass();
          }
+         moduleSolved = true;
       }
    }
 
 #pragma warning disable 414
-   private readonly string TwitchHelpMessage = @"Use !{0} Duck/Goose/Neither to press that corresponding button.";
+   private readonly string TwitchHelpMessage = @"Use !{0} Jerma/Innocent/Dream to press that corresponding button.";
 #pragma warning restore 414
 
    IEnumerator ProcessTwitchCommand (string Command) {
       Command = Command.Trim().ToUpper();
       yield return null;
-      if (Command == "DUCK")
+      if (Command == "JERMA")
          buttons[0].OnInteract();
-      else if (Command == "GOOSE")
+      else if (Command == "INNOCENT")
          buttons[1].OnInteract();
-      else if (Command == "NEITHER")
+      else if (Command == "DREAM")
          buttons[2].OnInteract();
       else
          yield return "sendtochaterror Invalid command!";
+   }
+
+   void TwitchHandleForcedSolve()
+   { 
+      StartCoroutine(HandleAutosolve());
+   }
+
+   IEnumerator HandleAutosolve()
+   {
+      while (true)
+      {
+         while (moduleSolved) yield return null;
+         buttons[selectedphoto].OnInteract();
+      }
    }//coding in github is a fucking nightmare with tabbing
 }
