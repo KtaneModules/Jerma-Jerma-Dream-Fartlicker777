@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Duck, Duck, Goose.unity
+- path: Assets/Jerma, Jerma, Dream.unity
   isLoaded: 1
   isActive: 1
