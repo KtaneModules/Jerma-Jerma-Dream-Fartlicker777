@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections;
 using UnityEngine;
-using KModkit;
+
 
 public class JermaJermaDream : MonoBehaviour {
 
@@ -36,15 +33,11 @@ public class JermaJermaDream : MonoBehaviour {
          button.OnInteract += delegate () { buttonPress(button); return false; };
       }
 
-
-      //button.OnInteract += delegate () { PressButton(); return false; };
-
    }
 
    // Use this for initialization
    void Start () {
       moduleSolved = true;
-
    }
 
    void OnNeedyActivation () {
@@ -91,14 +84,18 @@ public class JermaJermaDream : MonoBehaviour {
    IEnumerator ProcessTwitchCommand (string Command) {
       Command = Command.Trim().ToUpper();
       yield return null;
-      if (Command == "JERMA")
+      if (Command == "JERMA") {
          buttons[0].OnInteract();
-      else if (Command == "INNOCENT")
+      }
+      else if (Command == "INNOCENT") {
          buttons[1].OnInteract();
-      else if (Command == "DREAM")
+      }
+      else if (Command == "DREAM") {
          buttons[2].OnInteract();
-      else
+      }
+      else {
          yield return "sendtochaterror Invalid command!";
+      }
    }
 
    void TwitchHandleForcedSolve()
